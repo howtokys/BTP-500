@@ -1,6 +1,6 @@
 #
-# Author: 
-# Student Number:
+# Author: Thuong Tuyen Tran
+# Student Number: 161527239
 #
 # Place the code for your lab 2 here.  Read the specs carefully.
 #
