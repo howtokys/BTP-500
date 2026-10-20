@@ -11,8 +11,66 @@ def function1(value, n):
 	else:
 		return value * function1(value, n - 1)
 ```
+Base case: n = 0
 
+```python
+if (n == 0):                          # 1 ("==")
+    return 1                          # 1 ("return")
+elif (n == 1):                        # 0 (skipped)
+    return value                      # 0 (skipped)
+else:                                 # 0 (skipped)
+    return value * function1(value, n - 1)     # 0 (skipped)
+```
 
+T(n) = 2
+
+Base case: n = 1
+
+```python
+if (n == 0):                          # 1 ("==")
+    return 1                          # 0 (skipped)
+elif (n == 1):                        # 1 ("==")
+    return value                      # 1 ("return")
+else:                                 # 0 (skipped)
+    return value * function1(value, n - 1)     # 0 (skipped)
+```
+  T(n) = 1 + 1 + 1  = 3
+
+Recursive case: n > 1
+
+```python
+if (n == 0):                          # 1 ("==")
+    return 1                          # 0 (skipped)
+elif (n == 1):                        # 1 ("==")
+    return value                      # 0 (skipped)
+else:                                 # 0 (skipped)
+    return value * function1(value, n - 1) # 3 ("return", "*", "-") + T(n - 1)
+```
+
+T(n) = 1 + 1 + 3 + T(n - 1) 
+
+= T(n - 1) + 5 
+
+= T(n-2) + 5 + 5 
+
+= T(n-3) + 5 + 5 + 5
+
+=> T(n) = T(n-k) + k x 5
+
+To reach base case T(1): n - k = 1
+
+k = n - 1
+
+Substitute k = n - 1:
+
+T(n) = T(1) + 5(n - 1)
+
+= 3 + 5n - 5
+
+= 5n - 2
+
+DF: 5n
+Complexity: O(n)
 
 ### Function 2
 
@@ -30,7 +88,17 @@ def function2(mystring):
 	return recursive_function2(mystring, 0, len(mystring) - 1)
 ```
 
+Evaluating the function2:
 
+```python
+def function2(mystring):
+    return recursive_function2(mystring, 0, len(mystring) - 1) 3 + T_rec ()
+
+```
+
+$$
+T_{func2}(n) = T_{rec}(n - 1) + 3
+$$
 
 ### Function 3
 
