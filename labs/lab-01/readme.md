@@ -168,6 +168,6 @@ Place all your work for this lab into the folder `lab-01` in your GitHub reposit
   - identify the dominant factor in the $T(n)$ formula.
   - state the complexity using *Big-O* notation.
 
-| Criteria       | Poor - 0 mark                    | Fair - 1 marks                             | Good - 2 marks      |
+| Criteria       | Poor - 0%                        | Fair - 50%                                 | Good - 100%         |
 | -------------- | -------------------------------- | ------------------------------------------ | ------------------- |
 | Lab Completion | All parts are incomplete/missing | (part A) or (part B) is incomplete/missing | All parts completed |

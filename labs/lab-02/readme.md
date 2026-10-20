@@ -132,7 +132,7 @@ def linear_search(list, key)
 
 ### Function 3: Binary Search
 
-Write the **recursive** function to perform linear search. This function receives a *sorted* list of values and a key, searches in the list using the binary search algorithm; if a matching key is found in the list, function returns index of where the key was found. If the key is not found, function returns `-1`.
+Write the **recursive** function to perform binary search. This function receives a *sorted* list of values and a key, searches in the list using the binary search algorithm; if a matching key is found in the list, function returns index of where the key was found. If the key is not found, function returns `-1`.
 
 NOTE: you are not allowed to use any of the library/built-in functions for this problem. The only function you are allowed to use is `len()` to find the size of the list.
 
@@ -161,6 +161,6 @@ Push an updated version of of the files found in the `release` and any other rel
   - state the complexity using *Big-O* notation.
 - For part B to be completed, all three functions must be implemented in a *recursive* manner and they must pass testing with the provided tester.
 
-| Criteria       | Poor - 0 mark                    | Fair - 1 marks                             | Good - 2 marks      |
+| Criteria       | Poor - 0%                        | Fair - 50%                                 | Good - 100%         |
 | -------------- | -------------------------------- | ------------------------------------------ | ------------------- |
 | Lab Completion | All parts are incomplete/missing | (part A) or (part B) is incomplete/missing | All parts completed |
